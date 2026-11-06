@@ -1,0 +1,4 @@
+{
+  "scope": "Original source baseline excluding dependency install and profiling, public mirror data; at run time not byte-verified against the Drive CSV - byte-identity with the user's Drive CSV verified later on 2026-11-05 (PROVENANCE_2026-11-05.md)",
+  "failures": []
+}

@@ -1,0 +1,122 @@
+{
+  "success": false,
+  "statistics": {
+    "evaluated_expectations": 12,
+    "successful_expectations": 4,
+    "unsuccessful_expectations": 8,
+    "success_percent": 33.33333333333333
+  },
+  "checks": [
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "MOVIES",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": true,
+      "unexpected_count": 0
+    },
+    {
+      "type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "MOVIES",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": false,
+      "unexpected_count": 3601
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "YEAR",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": false,
+      "unexpected_count": 644
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "GENRE",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": false,
+      "unexpected_count": 80
+    },
+    {
+      "type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "GENRE",
+        "regex": "^\\s*(?:Action|Adventure|Animation|Comedy|Crime|Drama|Horror|Mystery|Romance|Thriller)(?:\\s*,\\s*(?:Action|Adventure|Animation|Comedy|Crime|Drama|Horror|Mystery|Romance|Thriller))*\\s*$",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": false,
+      "unexpected_count": 3805
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "RATING",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": false,
+      "unexpected_count": 1820
+    },
+    {
+      "type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "RATING",
+        "max_value": 10,
+        "min_value": 1,
+        "batch_id": "movies-raw_movies"
+      },
+      "success": true,
+      "unexpected_count": 0
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ONE-LINE",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": true,
+      "unexpected_count": 0
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "STARS",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": true,
+      "unexpected_count": 0
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "VOTES",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": false,
+      "unexpected_count": 1820
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "RunTime",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": false,
+      "unexpected_count": 2958
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "Gross",
+        "batch_id": "movies-raw_movies"
+      },
+      "success": false,
+      "unexpected_count": 9539
+    }
+  ]
+}

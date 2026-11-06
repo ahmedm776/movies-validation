@@ -1,0 +1,18 @@
+{
+  "input_sha256": "f3666b7b60c1a23f8daecda305b4ddb661c6f3f0d7a692efa810d93b912f8902",
+  "input_rows": 9999,
+  "gx_success": false,
+  "cerberus_filtered_rows": 136,
+  "missing_genre_excluded": 80,
+  "duplicates_removed": 429,
+  "iqr_flagged_not_removed": 1991,
+  "output_rows": 9490,
+  "year_parsed_before_imputation": 9251,
+  "year_missing_final": 579,
+  "default_policy": "No imputation or IQR exclusion. YEAR_RAW and missingness preserved. Missing genre exclusions and exact duplicate removal are sequential; raw input snapshot preserved.",
+  "optional_pedagogical": {
+    "iqr_excluded": 2523,
+    "rows": 6967,
+    "warning": "Imputed year is not recovered release information; statistical extremes are not proven errors."
+  }
+}
