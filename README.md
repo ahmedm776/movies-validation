@@ -71,3 +71,8 @@ python test_movies.py
 The conservation test reads the generated final-output directory. It is not a
 standalone test of an empty checkout. The pipeline reproduces 9,490 default rows
 from the 9,999-row source; no training is involved.
+
+Post-publication run check (2026-11-06): the pipeline and 4 tests passed with
+Great Expectations 0.18.21; the pin above is aligned to that executed version.
+The previous 0.18.22 lock entry was not verified in this check. Other lock entries
+are historical environment records, not a claim of a fresh clean install of every pin.
