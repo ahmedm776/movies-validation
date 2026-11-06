@@ -55,3 +55,19 @@ with a later, tested validation pipeline.
   one.
 - The validation pipeline, tests and reports are later portfolio work,
   built with AI-assistant help and presented as such.
+
+## Run and test
+
+Raw dataset files are not bundled. Download the CSV from the mirror linked above,
+then use the declared Great Expectations 0.18.x environment in requirements.lock.txt
+(the current Great Expectations 1.x API is incompatible with this script).
+
+```bash
+pip install -r requirements.lock.txt
+python portfolio_movies.py /path/to/movies.csv --output final-output
+python test_movies.py
+```
+
+The conservation test reads the generated final-output directory. It is not a
+standalone test of an empty checkout. The pipeline reproduces 9,490 default rows
+from the 9,999-row source; no training is involved.
